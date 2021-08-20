@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
 
     return ListView(
       controller: _scrollController,
-      padding: EdgeInsets.only(left: 16.w, right: 15.w, bottom: 107.h),
+      padding: EdgeInsets.only(left: 16.w, right: 15.w, bottom: 107.h,),
       children: [
         homeSlider(context),
         SizedBox(height: 8.h,),
