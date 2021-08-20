@@ -77,10 +77,9 @@ userBottomTabItems(BuildContext context) {
           child: Column(
             children: [
               Image.asset(
-                'assets/images/home.png',
+                'assets/images/home-button.png',
                 height: 24.h,
                 width: 24.w,
-                color: metalBlack,
               ),
               SizedBox(height: 5.h,),
               Text("Home", style: TextStyle(

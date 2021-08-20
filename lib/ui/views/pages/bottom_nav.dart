@@ -29,9 +29,7 @@ class _BottomNav extends State<BottomNav> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: Consumer2<BottomNavModel, AppBarModel>(
+    return Consumer2<BottomNavModel, AppBarModel>(
         builder: (context, model, appBarModel, child) => Scaffold(
           backgroundColor: concreteGrey,
           extendBodyBehindAppBar: true,
@@ -64,13 +62,11 @@ class _BottomNav extends State<BottomNav> {
                                 decoration: InputDecoration(
                                   contentPadding: EdgeInsets.symmetric(horizontal: width(context) / 20,
                                       vertical: height(context) / 40),
-                                  //border: InputBorder.none,
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: Colors.black.withOpacity(0.3),
-                                      width: 0.2,
-                                    ),
-                                  ),
+                                  border: InputBorder.none,
+                                  focusedBorder: InputBorder.none,
+                                  enabledBorder: InputBorder.none,
+                                  errorBorder: InputBorder.none,
+                                  disabledBorder: InputBorder.none,
                                   labelText: "Search for a product",
                                   //contentPadding: EdgeInsets.only(bottom: height(context) / 100, left: width(context) / 30),
                                   labelStyle: TextStyle(
@@ -100,6 +96,7 @@ class _BottomNav extends State<BottomNav> {
                           badgeColor: internationalOrange,
                           shape: BadgeShape.circle,
                           showBadge: true,
+                          toAnimate: false,
                           badgeContent: Container(
                               child: Center(
                                 child: Text(
@@ -143,6 +140,11 @@ class _BottomNav extends State<BottomNav> {
                                       width: width(context) / 2,
                                       child: TextFormField(
                                         decoration: InputDecoration(
+                                          border: InputBorder.none,
+                                          focusedBorder: InputBorder.none,
+                                          enabledBorder: InputBorder.none,
+                                          errorBorder: InputBorder.none,
+                                          disabledBorder: InputBorder.none,
                                           contentPadding: EdgeInsets.symmetric(
                                               vertical: height(context) / 40),
                                           labelText: "Search for a product",
@@ -153,6 +155,7 @@ class _BottomNav extends State<BottomNav> {
                                               fontWeight: FontWeight.w500,
                                               fontFamily: "Avenir"),
                                         ),
+
                                         style: TextStyle(
                                             fontSize: width(context) / 30, color: metalBlack, fontFamily: "Avenir"),
                                       ),
@@ -174,6 +177,7 @@ class _BottomNav extends State<BottomNav> {
                                   badgeColor: internationalOrange,
                                   shape: BadgeShape.circle,
                                   showBadge: true,
+                                  toAnimate: false,
                                   badgeContent: Container(
                                       child: Center(
                                         child: Text(
@@ -217,8 +221,7 @@ class _BottomNav extends State<BottomNav> {
             top: false,
               child: IndexedStack(index: model.currentIndex, children: model.children)),
         ),
-      ),
-    );
+      );
 
   }
 

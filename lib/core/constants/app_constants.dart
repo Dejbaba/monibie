@@ -49,22 +49,27 @@ List dummySliders = [
 
 List dummyTopSellingItems = [
   "assets/images/shoe.png",
-  "assets/images/noodles.png",
+  "assets/images/iron.png",
   "assets/images/watch.png"
 ];
 
 List dummyElectronics = [
-  "assets/images/iron.png","assets/images/iron.png","assets/images/iron.png",
+  "assets/images/watch.png","assets/images/rec_4.png","assets/images/iron.png",
+
+];
+
+List beautyProducts = [
+  "assets/images/watch.png","assets/images/rec_1.png","assets/images/shoe.png",
 
 ];
 
 List dummyPhones = [
-  "assets/images/phone.png","assets/images/phone.png","assets/images/phone.png",
+  "assets/images/phone.png","assets/images/rec_4.png","assets/images/rec_3.png",
 
 ];
 
 List dummyPhoneAccessories = [
-  "assets/images/phone.png","assets/images/phone.png","assets/images/phone.png",
+  "assets/images/phone.png","assets/images/rec_3.png","assets/images/watch.png",
 ];
 
 
@@ -84,28 +89,87 @@ List dummyBrands = [
 
 List dummyRecommendedProducts = [
   DummyProduct(
-    image: "assets/images/shoe.png",
-    currentPrice: '₦35,000',
-    oldPrice: '₦50,000',
-    name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+      image: "assets/images/rec_1.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
   ),
   DummyProduct(
-    image: "assets/images/shoe.png",
-    currentPrice: '₦35,000',
-    oldPrice: '₦50,000',
-    name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+      image: "assets/images/rec_1.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
   ),
   DummyProduct(
-    image: "assets/images/shoe.png",
-    currentPrice: '₦35,000',
-    oldPrice: '₦50,000',
-    name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+      image: "assets/images/rec_2.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
   ),
   DummyProduct(
-    image: "assets/images/shoe.png",
-    currentPrice: '₦35,000',
-    oldPrice: '₦50,000',
-    name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+      image: "assets/images/rec_2.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_3.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_4.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+];
+
+List dummyProductImages = [
+  "assets/images/rec_2.png","assets/images/rec_3.png","assets/images/rec_4.png",
+];
+
+List dummyScreenShots = [
+  "assets/images/screenshot_1.png","assets/images/screenshot_2.png","assets/images/screenshot_3.png","assets/images/screenshot_4.png",
+];
+
+List dummyRecommendedProducts2 = [
+  DummyProduct(
+      image: "assets/images/rec_1.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_1.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_2.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_2.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_3.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
+  ),
+  DummyProduct(
+      image: "assets/images/rec_4.png",
+      currentPrice: '₦35,000',
+      oldPrice: '₦50,000',
+      name: 'Adidas Yeezy 380  v3 water resistant marking on the inner circumference'
   ),
 ];
 

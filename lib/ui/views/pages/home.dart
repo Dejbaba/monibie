@@ -258,12 +258,12 @@ class _HomeState extends State<Home> {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: List.generate(dummyElectronics.length, (index) => Container(
+          children: List.generate(beautyProducts.length, (index) => Container(
             height: 104.h,
             width: 104.w,
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset(dummyElectronics[index])),
+                child: Image.asset(beautyProducts[index])),
           )),
         ),
         SizedBox(height: 4.h,),
@@ -329,12 +329,12 @@ class _HomeState extends State<Home> {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: List.generate(dummyPhones.length, (index) => Container(
+          children: List.generate(dummyPhoneAccessories.length, (index) => Container(
             height: 104.h,
             width: 104.w,
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset(dummyPhones[index])),
+                child: Image.asset(dummyPhoneAccessories[index])),
           )),
         ),
         SizedBox(height: 4.h,),

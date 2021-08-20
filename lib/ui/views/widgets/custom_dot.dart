@@ -6,30 +6,35 @@ import 'package:monibie/ui/shared/colors.dart';
 class CustomDot extends StatelessWidget{
 
   final bool isActive;
+  final bool fromProductScreen;
+  final double outerSize;
+  final Color activeColor;
+  final Color inactiveColor;
+  final double innerSize;
 
-  const CustomDot({ this.isActive = true});
+  const CustomDot({ this.fromProductScreen = false, this.isActive = true, this.outerSize = 8, this.innerSize = 4, this.activeColor = dodgerBlue, this.inactiveColor = dustyGrey});
 
   @override
   Widget build(BuildContext context) {
 
     return Container(
-      height: 8.h,
-      width: 8.w,
+      height: outerSize.h,
+      width: outerSize.w,
       margin: EdgeInsets.only(right: 5.w),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: fromProductScreen && isActive ? activeColor : Colors.white,
         shape: BoxShape.circle,
-        border: Border.all(color: Colors.white)
+        border: Border.all(color: fromProductScreen && isActive ? activeColor : Colors.white, width: fromProductScreen ? 3 : 1)
       ),
       child: AnimatedContainer(
         //margin: EdgeInsets.all(2),
         duration: Duration(microseconds: 1),
-        height: isActive ? 4.h
-            : 4.h,
+        height: isActive ? innerSize.h
+            : innerSize.h,
         width: isActive ? 4.w//40
-            : 4.w,   //45
+            : innerSize.w,   //45
         decoration: BoxDecoration(
-          color: isActive ? dodgerBlue : dustyGrey,
+          color: isActive ? activeColor : inactiveColor,
           shape: BoxShape.circle,
         ),
       ),
