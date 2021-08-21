@@ -173,4 +173,8 @@ List dummyRecommendedProducts2 = [
   ),
 ];
 
+List dummySize = [
+  "XS", "S", "M", "L", "XL", "XXL"
+];
+
 

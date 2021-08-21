@@ -19,6 +19,7 @@ const altoGrey = Color(0xffD9D9D9);
 const galleryGrey = Color(0xffF0F0F0);
 const peach = Color(0xffFFE9AD);
 const selectiveYellow = Color(0xffFFB300);
+const havelockBlue = Color(0xff4186D9);
 
 
 

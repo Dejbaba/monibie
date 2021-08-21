@@ -8,6 +8,7 @@ import 'package:monibie/core/constants/app_constants.dart';
 import 'package:monibie/core/viewmodels/app_bar_model.dart';
 import 'package:monibie/core/viewmodels/slider_model.dart';
 import 'package:monibie/ui/shared/colors.dart';
+import 'package:monibie/ui/views/widgets/bottom_sheet.dart';
 import 'package:monibie/ui/views/widgets/custom_dot.dart';
 import 'package:monibie/ui/views/widgets/custom_dropdown.dart';
 import 'package:monibie/ui/views/widgets/custom_progress_bar.dart';
@@ -257,7 +258,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                   borderRadius:
                   BorderRadius.all(Radius.circular(100))),
             ),
-            onPressed: () {},
+            onPressed: () => bottomSheet(
+                context: context,
+            ),
           ),
         ),
         Container(
@@ -280,7 +283,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                   borderRadius:
                   BorderRadius.all(Radius.circular(100))),
             ),
-            onPressed: () {},
+            onPressed: () => bottomSheet(
+              context: context,
+            ),
           ),
         ),
         Container(
