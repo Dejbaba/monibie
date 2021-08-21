@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        builder: ()=>  MultiProvider(
+        builder: () => MultiProvider(
         providers: allProviders,
         child: MaterialApp(
           title: 'Monibie',

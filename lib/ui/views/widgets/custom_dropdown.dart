@@ -52,7 +52,7 @@ class CustomDropDown extends StatelessWidget {
             child: DropdownButtonHideUnderline (
               child: DropdownButton<String>(
                 style: TextStyle(
-                  fontFamily: "GothamMedium",
+                  fontFamily: "Gotham",
                   fontWeight: FontWeight.w500,
                   fontSize: 14.sp,
                   color: Colors.black,
@@ -61,7 +61,7 @@ class CustomDropDown extends StatelessWidget {
                 hint: Padding(
                   padding:  EdgeInsets.only(left: 16.sp,),
                   child: Text(hintText,
-                    style: TextStyle(fontSize: 14.sp, fontFamily: "Avenir",
+                    style: TextStyle(fontSize: 14.sp, fontFamily: "Gotham",
                         fontWeight: FontWeight.w500, color: hintTextColor),),
                 ),
                 icon: Padding(

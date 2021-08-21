@@ -1,11 +1,9 @@
 
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:monibie/core/viewmodels/app_bar_model.dart';
-import 'package:monibie/core/viewmodels/bottom_nav_model.dart';
 import 'package:monibie/core/viewmodels/slider_model.dart';
 import 'package:monibie/ui/views/widgets/custom_dot.dart';
 import 'package:monibie/ui/views/widgets/listview_items/brand_item.dart';
@@ -29,18 +27,24 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    
     _scrollController = new ScrollController();
 
-      _scrollController.addListener(() {
-        if (_scrollController.position.pixels >
-            _scrollController.position.minScrollExtent) {
-          Provider.of<AppBarModel>(context, listen:false).updateParentColor(value: false);
-        }else{
-          Provider.of<AppBarModel>(context, listen:false).updateParentColor(value: true);
-        }
-      });
+      _scrollListener();
 
   }
+
+ _scrollListener() {
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels >
+          _scrollController.position.minScrollExtent) {
+        Provider.of<AppBarModel>(context, listen:false).updateParentColor(value: false);
+      }else{
+        Provider.of<AppBarModel>(context, listen:false).updateParentColor(value: true);
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
 

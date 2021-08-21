@@ -7,10 +7,8 @@ import 'package:monibie/core/constants/app_constants.dart';
 import 'package:monibie/core/viewmodels/app_bar_model.dart';
 import 'package:monibie/core/viewmodels/bottom_nav_model.dart';
 import 'package:monibie/ui/views/widgets/bottom_nav_items.dart';
-import 'package:monibie/core/viewmodels/bottom_nav_model.dart';
 import 'package:monibie/ui/shared/colors.dart';
 import 'package:provider/provider.dart';
-import 'package:monibie/ui/views/widgets/bottom_nav_items.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../shared/colors.dart';
 

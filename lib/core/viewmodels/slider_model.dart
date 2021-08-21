@@ -10,11 +10,13 @@ class SliderModel extends ChangeNotifier{
   int _imageIndex = 0;
   int get imageIndex => _imageIndex;
 
+  ///update the position index of home slider
   updateIndex({int index}){
     _index = index;
     notifyListeners();
   }
 
+  ///update the index of the slider on product details screen
   updateImageIndex({int index}){
     _imageIndex = index;
     notifyListeners();

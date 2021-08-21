@@ -32,7 +32,11 @@ class _ProductDetailsState extends State<ProductDetails> {
     super.initState();
     _scrollController = new ScrollController();
 
-    _scrollController.addListener(() {
+    _scrollListener();
+  }
+
+  _scrollListener() {
+     _scrollController.addListener(() {
       if (_scrollController.position.pixels >
           _scrollController.position.minScrollExtent) {
         Provider.of<AppBarModel>(context, listen:false).updateColor(value: false);
@@ -41,6 +45,7 @@ class _ProductDetailsState extends State<ProductDetails> {
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
